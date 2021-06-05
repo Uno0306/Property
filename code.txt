@@ -1,0 +1,18 @@
+// 프로젝트 생성
+npx create-react-app Charter
+
+// 에러가 나오면
+
+// 라이브러리 설치
+cd Chater
+npm install -S node-sass classnames react-icons prop-types
+npm i eslint-config-prettier --save-dev
+
+// 개발 도구 설치 및 설정
+npm install eslint-config-airbnb eslint-config-prettier --save-dev
+
+/* 리액트 데이팅 앱 만들기
+	https://www.youtube.com/watch?v=CIDTobjNMBU&t=241s
+	github Download
+	> npm install axios
+*/
