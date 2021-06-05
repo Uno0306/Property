@@ -1,3 +1,6 @@
+# Property
+>>>>>>> aee096a8b2bc63156e1205f5268e8ff4ac05ae7f
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
@@ -70,5 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
-# Property
->>>>>>> aee096a8b2bc63156e1205f5268e8ff4ac05ae7f
+
