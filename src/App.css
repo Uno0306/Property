@@ -1,16 +1,32 @@
 .App {
   text-align: center;
-  max-width: 500px;
-  width: 100%;
+  max-width: max-content;
+  max-height: max-content;
   margin: auto;
 }
 
 div{
   align-items: center;
+  max-width: max-content;
+  max-height: max-content;
 }
 
 .mainboard{
   text-align: center;
   width: max-content;
   height: max-content;
+}
+
+.leftBox{
+  float: left;
+  margin: 10px;
+}
+
+.rightBox{
+  float: left;
+  margin: 10px;
+}
+
+.bottom{
+  text-align: center;
 }
