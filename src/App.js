@@ -1,122 +1,71 @@
 import './App.css'
-import { useEffect, useState } from 'react'
-import Profile from './Profile.js'
-import axios from 'axios'
+import React from 'react'
+// import $ from 'jquery'
+import jso from "./bank.json"
 
 function App() {
-  //let [step, setStep] = useState(0);
-  let [step] = useState(0);
-  let [curCard, setcurCardNum] = useState(-1);
-  let [Clicked, setClicked] = useState('like');
-  let [select, selectAlt] = useState([]);
-  let [dat, datAlt] = useState([]);
   
-  useEffect(() => {
-    //데이터 가져와서 state로 넣기
-    axios.get('https://codingapple1.github.io/shop/initialData.json').then((a)=>{
-      datAlt([...a.data]);
-      console.log(dat);
-    });
-  },[]);
+  <div>리턴 밖</div>
+  console.log(jso);
+  console.log(jso[0].organid);
+ 
+  // function bangk(){
+  //   var bangk_text = "";
+  //   for(var i=0; i<jso.length-1; i++){
+  //     bangk_text += '<div className='+'""'+'>'+
+  //       '<h1>'+jso[i].organid+'</h1>'+
+  //       '<h2>'+jso[i].bssYmdStart+'부터 '+jso[i].bssYmdEnd}+'까지</h2>'+
+  //       '<div>'+
+  //         '<p>부분보증비율 : '+jso[i].interest1_1+'</p>'+
+  //         '<p>'+jso[i].interest2_1+'</p>'+
+  //         '<p>'+jso[i].interest3_1+'</p>'+
+  //         '<p>'+jso[i].interest4_1+'</p>'+
+  //       '</div>'+
+  //       '<div>'+
+  //         '<p>'+jso[i].interest1_2+'</p>'+
+  //         '<p>'+jso[i].interest2_2+'</p>'+
+  //         '<p>'+jso[i].interest3_2+'</p>'+
+  //         '<p>'+jso[i].interest4_2+'</p>'+
+  //       '</div>'+
+  //     '</div>';
+  //     console.log("저장됨");
+  //     $('#bankVal').append(bangk_text);
+  //   };
   
-
-  useEffect(()=>{
-    if (curCard !== -1 && Clicked === 'like') {
-      Like()
-    } else if (curCard !== -1 && Clicked === 'dislike'){
-      Hate()
-    }
-    
-  }, [curCard, Clicked])
-
-
-  function Like(){
-    let copy = [...dat];
-      copy[curCard].passed = true;
-      copy[curCard].liked = 'right';
-      datAlt(copy);
-      //고른리스트에 추가
-      selectAlt([...select, curCard]);
-        console.log(select);
-  }
-
-  function Hate(){
-
-    let copy = [...dat];
-    copy[curCard].passed = true;
-    copy[curCard].liked = 'left';
-    datAlt(copy);
-
-  }
-
   return (
-    <div className="App">
-      <nav className="navbar navbar-expand navbar-light">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <i className="nav-link fas fa-dog fa-lg"></i>
-            </li>
-            <li className="nav-item">
-              <i className="nav-link fas fa-star fa-lg"></i>
-            </li>
-            <li className="nav-item">
-              <i className="nav-link fas fa-comment fa-lg"></i>
-            </li>
-            <li className="nav-item">
-            <i className="nav-link fas fa-cog fa-lg"></i>
-            </li>
-          </ul>
-      </nav>
-      
-      { 
-      
-      //첫로드시 카드, 버튼 보여주기
-
-      dat[0] &&
+    <div className="mainboard">
+      {jso.forEach(function(item){
+        console.log("forEach");
+        console.log(item.organid); 
+        <h1>{item.organid}</h1>
+        console.log("h1 "+item.organid);
+        // <h3>{item.bssymdstart}부터{item.bssymdEnd}</h3>
         
-      <div className="p-1 p-container" >
-        { dat.map((a,i)=>
-          <Profile className="profile" a={a} key={i} 현재카드번호={curCard} step={step} 고른거={select} 고른거변경={selectAlt} 데이터={dat}></Profile>
-        )}
-        <div className="bottom-buttons">
-          <button onClick={()=>{
-            if (dat.length > curCard+1){
-              setcurCardNum(curCard+1); setClicked('dislike');
-            } else {
-              alert('더 이상의 유기견은 없습니다.')
-            }
-
-            }} className="btn green"><i className="fas fa-times-circle fa-3x"></i></button>
-          <button onClick={()=>{
-            if (dat.length > curCard+1){
-            setcurCardNum(curCard+1); setClicked('like');
-            }else {
-              alert('유기견을 모두 입양하셨습니다.')
-            }
-          
-          }} className="btn red"><i className="fab fa-gratipay fa-3x"></i></button>
-        </div>
+      })}
+      <h1>{jso[0].organid}</h1>
+      <h3>{jso[0].bssymdstart}부터 {jso[0].bssymdend}까지</h3>
+      <div>
+        <p>부분보증비율: {jso[0].interest1_1}</p>
+        <p>기준금리: {jso[0].interest2_1}</p>
+        <p>가산금리: {jso[0].interest3_1}</p>
+        <p>적용금리: {jso[0].interest4_1}</p>
       </div>
-      
-      
-      }
-<a href="main.html">감자감자</a>
-      {
-      //고르는거 끝났을 때
-      dat.length < curCard+2 
-      ? (<h5 className="result">님이 입양할 친구들 : 
+      <div>
+        <p>부분보증비율: {jso[0].interest1_2}</p>
+        <p>기준금리: {jso[0].interest2_2}</p>
+        <p>가산금리: {jso[0].interest3_2}</p>
+        <p>적용금리: {jso[0].interest4_2}</p>
+      </div>
 
-        { select.map((data,i)=>{
-          return <p className="m-1">{dat[data].name}</p>
-        }) }
-
-      </h5>)
-      : null
-      }
-      
+      <a href="main.html">감자감자</a>
+      <p>중간 값</p>
+      <p>"data: "</p> 
     </div>
+
+
   );
-}
+  
+};
 
 
 export default App;

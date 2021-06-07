@@ -1,0 +1,6 @@
+error
+
+'$' is not defined  no-undef
+fix> npm install jquery --save
+	imfort $ from ;jquery'
+

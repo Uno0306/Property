@@ -16,3 +16,27 @@ npm install eslint-config-airbnb eslint-config-prettier --save-dev
 	github Download
 	> npm install axios
 */
+
+// github 연동
+git add *
+git commit -m "1stDeploy"
+git branch
+git branch -m main
+git remote add origin https://github.com/Uno0306/property.git
+git pull origin main 
+git pull origin main --allow-unrelated-histories 
+git push origin main
+
+
+// Visual Studio Code 단축키
+tab => 들여쓰기
+shift+tab => 내여쓰기
+
+// XML -> JSON 변환 사이트
+https://fronteer.kr/service/xml2json
+
+// JSON 형식 확인 사이트
+https://jsonlint.com/
+
+ 
+
