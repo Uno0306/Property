@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid  */
 
 import './Form.css'
+// import $ from 'jquery'
 import React from 'react'
 
 function Form(){
@@ -42,3 +43,4 @@ function Form(){
 };
 
 export default Form;
+

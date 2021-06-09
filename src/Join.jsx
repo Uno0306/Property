@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid  */
 
 import './Join.css'
+// import $ from 'jquery'
 import React from 'react'
 
 function Join(){

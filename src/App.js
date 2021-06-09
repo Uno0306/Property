@@ -45,34 +45,17 @@ function App() {
 
   return (
     <div className="AppWrraper">
-      {jso.forEach(function(item){
-        console.log("forEach");
-        console.log(item.organid); 
+      {/* {jso.forEach(function(item){
         <h1>{item.organid}</h1>
-        console.log("h1 "+item.organid);
         // <h3>{item.bssymdstart}부터{item.bssymdEnd}</h3>
         
-      })}
-      <div className="ooh">
-        <a href="index.html" id="gam" ><h1 className='gamja'>은행 전세금리</h1></a>
-      </div>
-      <div className="nav">
-        <ul >
-          <a href="index2.html"><li className="list">로그인</li></a>
-          <a href="#"><li className="list">오</li></a>
-          <a href="#"><li className="list">아</li></a>
-          <a href="#"><li className="list">이</li></a>
-        </ul>
-      </div>
-
+      })} */}
+    
       <div className="bankWraaper">{banks()}<br></br><div className="change"></div></div>
-
 
     </div>
 
-
   );
-  
 };
 
 

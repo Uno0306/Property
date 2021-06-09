@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Form />
   </React.StrictMode>,
-  document.getElementById('form')
+  document.getElementById('root')
 );
  console.log("form실행");
 
