@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  max-width: max-content;
+  max-height: max-content;
+  margin: auto;
+}
+
+ul{
+  list-style:none;
+  padding-left:0px;
+  margin-left: 1400px;
+  }
+
+.list{
+  float: left;
+  margin: 0 30px 0 30px;
+}
+
+.ohh{
+  align-items: center;
+  width: max-content;
+}
+
+.gamja{
+  align-items: center;
+  width: max-content;
+  margin-left: 500%;
+}
+
+#gam a:hoverser{
+  color: green;
+}
+
+div{
+  align-items: center;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.AppWrraper{
+  text-align: center;
+  width: max-content;
+  height: max-content;
+}
+
+.bankWraaper{
+  text-align: center;
+  width: max-content;
+  margin-left: 10%;
+}
+
+.leftBox{
+
+  align-items: center;
+  float: left;
+  margin: 10px 10px 10px 30px;
+  width: 45%;
+}
+
+.rightBox{
+  align-items: center;
+  float: left;
+  margin: 10px;
+  width: 45%;
+  margin: 10px 10px 10px 20px;
+}
+
+.bottom{
+  text-align: center;
+}
+
+
+.box0, .box1, .box2, .box3, .box5, .box6,
+.box7, .box9, .box10, .box11, .box13, .box14, .box15{
+  float: left;
+  margin: 10px;
+  border: 1px solid;
+  height: 300px;
+  width: 400px;
+  padding: 5px;
+}
+.box4, .box8, .box12,.box16{
+  clear: both;
+  float: left;
+  margin: 10px;
+  border: 1px solid;
+  height: 300px;
+  width: 400px;
+  padding: 5px;
+}
+
+.change{
+  clear: both;
+  height: 50px;
+}

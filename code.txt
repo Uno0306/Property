@@ -1,0 +1,42 @@
+// 프로젝트 생성
+npx create-react-app Property
+
+// 에러가 나오면
+
+// 라이브러리 설치
+cd Property
+npm install -S node-sass classnames react-icons prop-types
+npm i eslint-config-prettier --save-dev
+
+// 개발 도구 설치 및 설정
+npm install eslint-config-airbnb eslint-config-prettier --save-dev
+
+/* 리액트 데이팅 앱 만들기
+	https://www.youtube.com/watch?v=CIDTobjNMBU&t=241s
+	github Download
+	> npm install axios
+*/
+
+// github 연동
+git add *
+git commit -m "4thDeploy"
+git branch
+git branch -m main
+git remote add origin https://github.com/Uno0306/property.git
+git pull origin main 
+git pull origin main --allow-unrelated-histories 
+git push origin main
+
+
+// Visual Studio Code 단축키
+tab => 들여쓰기
+shift+tab => 내여쓰기
+
+// XML -> JSON 변환 사이트
+https://fronteer.kr/service/xml2json
+
+// JSON 형식 확인 사이트
+https://jsonlint.com/
+
+ 
+
