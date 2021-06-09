@@ -17,18 +17,23 @@ ul{
 }
 
 .ohh{
-  align-items: center;
+  text-align: center;
   width: max-content;
+}
+
+#gam{
+  text-align: center;
+  color: green;
 }
 
 .gamja{
-  align-items: center;
   width: max-content;
-  margin-left: 500%;
+  margin-left: 330%;
+  text-align: center;
 }
 
-#gam a:hoverser{
-  color: green;
+#gam a:hover{
+  color: blue;
 }
 
 div{
