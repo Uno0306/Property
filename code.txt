@@ -42,3 +42,10 @@ https://jsonlint.com/
 
 // react router
 npm i react-router-dom 
+npm install --save react-router
+npm install react-router-dom --save
+npm install -g yarn
+
+// pakage.json Modify
+react-scripts  앞에 추가
+test 앞에도 추가
