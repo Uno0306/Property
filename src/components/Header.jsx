@@ -1,15 +1,16 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
+import logoGreen from '../img/logoGreen.png';
 
 
 const Header = () => { 
     return ( 
-        <header className='header'> 
-            <div className="ooh">
-                <Link to="/" id="gam" ><img src="../img/logoGreen.png" alt="Bank Property Logo" className="logo"/></Link>
+        <header> 
+            <div className="lHead">
+                <Link to="/" id="gam" ><img src={logoGreen} alt="Bank Property Logo" className="logo"/></Link>
             </div>
-            <div className="nav">
-                <ul >
+            <div className="rHead">
+                <ul className="nav" >
                     <li className="list" key="navi1">
                         <Link to="/login">로그인</Link>
                     </li>

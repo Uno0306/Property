@@ -1,24 +1,24 @@
 .App {
   text-align: center;
-  max-width: max-content;
+  max-width: 1024px;
   max-height: max-content;
   margin: auto;
 }
 
-ul{
-  list-style:none;
-  padding-left:0px;
-  margin-left: 1300px;
-  }
-
-.list{
-  float: left;
-  margin: 0 30px 0 30px;
+header{
+  width: max-content;
+  height: 200px;
 }
 
-.ohh{
+
+.lHead{
   text-align: center;
   width: max-content;
+  float: left;
+}
+
+.rHead{
+  float: left;
 }
 
 #gam{
@@ -26,15 +26,27 @@ ul{
   color: green;
 }
 
-.logo{
-  width: 200px;
-  height: 200px;
-  margin-left: 500%;
-  text-align: center;
-}
-
 #gam a:hover{
   color: blue;
+}
+
+.logo{
+  width: 200px;
+  height: 150px;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.nav{
+  list-style:none;
+  padding-left:0px;
+  margin-left: 900px;
+  margin-top: 30px;
+}
+
+.list{
+  float: left;
+  margin: 0 30px 0 30px;
 }
 
 div{
@@ -56,7 +68,7 @@ div{
 }
 
 .leftBox{
-
+  
   align-items: center;
   float: left;
   margin: 10px 10px 10px 30px;
@@ -98,4 +110,21 @@ div{
 .change{
   clear: both;
   height: 50px;
+}
+
+footer{
+  width: max-content;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+hr{
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 1700px;
+}
+
+#cr{
+  margin-left: 100px;
 }

@@ -10,6 +10,7 @@ import Header from './components/Header';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
 import JoinPage from './pages/JoinPage';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -22,11 +23,8 @@ class App extends Component {
             <Route path='/login' component={LoginPage} />
             <Route path='/join' component={JoinPage} />
           </Switch>
+          <Route path='/' component={Footer} />
         </Router>
-  
-        <a href='./pages/LoginPage'>로그인</a>
-        <a href='/login'>로그인</a>
-        <a href="join">회원가입</a>
       </div>
     );
   }
