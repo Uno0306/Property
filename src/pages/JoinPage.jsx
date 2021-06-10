@@ -1,8 +1,9 @@
 import React from 'react';
 
 function JoinPage() {
-    return(
-        <div className="JoinWrapper">
+    const join = () => {
+        const result = [];
+        result.push(
             <table>
                 <tr>
                     <td className="JBoard">
@@ -43,7 +44,13 @@ function JoinPage() {
                     </td>
                 </tr>
             </table>
-        </div>
+        );
+        return result;
+    }
+
+
+    return(
+        <div className="JoinWrapper">{join()}</div>
     );
 }
 

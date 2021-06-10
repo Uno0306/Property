@@ -1,53 +1,31 @@
 import React from 'react'; 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-// function Header() { 
-//     return ( 
-//         <header className='header'> 
-//             <div className="ooh">
-//                 <a href="index.html" id="gam" ><h1 className='gamja'>은행 전세금리</h1></a>
-//             </div>
-//             <div className="nav">
-//                 <ul >
-//                     <li className="list" key="navi">
-//                         <a href="/">로그인</a>
-//                     </li>
-//                     <li className="list" key="navi">
-//                         <a href="/join">오</a>
-//                     </li>
-//                     <li className="list" key="navi">
-//                         <a href="#!">아</a>
-//                     </li>
-//                     <li className="list" key="navi">
-//                         <a href="#!">이</a>
-//                     </li>
-//                 </ul>
-//             </div>
-//         </header> 
-//     ); 
-// } 
-
-function ListItem(props) {
-    // Correct! There is no need to specify the key here:
-    return <li className="list">{props.value}</li>;
-}
-  
-function Header(props) {
-    const navos = props.navos;
-    const listItems = navos.map((navo) =>
-    // Correct! Key should be specified inside the array.
-    <ListItem key={navo.toString()}
-        value={navo} />
-    );
-    return (
-        <ul>
-            {listItems}
-        </ul>
-    );
-}
-  
-    const navos = [<a href="/">로그인</a>, <a href="/join">헿</a>, <a href="#!">낑</a>, <a href="#!">뀨</a>];
-    <Header navos={navos} />
+const Header = () => { 
+    return ( 
+        <header className='header'> 
+            <div className="ooh">
+                <Link to="index.html" id="gam" ><img src='./img/logo_green.png' alt="Bank Property Logo " className="logo"/></Link>
+            </div>
+            <div className="nav">
+                <ul >
+                    <li className="list" key="navi1">
+                        <Link to="/">로그인</Link>
+                    </li>
+                    <li className="list" key="navi2">
+                        <Link to="/join">오</Link>
+                    </li>
+                    <li className="list" key="navi3">
+                        <Link to="#!">아</Link>
+                    </li>
+                    <li className="list" key="navi4">
+                        <Link to="#!">이</Link>
+                    </li>
+                </ul>
+            </div>
+        </header> 
+    ); 
+}; 
 
 export default Header;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoginPage = () => {
+function LoginPage() {
     return(
         <div className="loginForm">
             <table className="loginTab">
