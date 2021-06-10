@@ -49,3 +49,6 @@ npm install -g yarn
 // pakage.json Modify
 react-scripts  앞에 추가
 test 앞에도 추가
+
+// 실행
+npm install --save-dev cross-env
